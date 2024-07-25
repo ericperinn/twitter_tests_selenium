@@ -3,3 +3,8 @@ Atividade para obtenção de nota na AP2 da matéria de Tópicos em computação
 
 
 O intuito desse projeto é demonstrar casos de teste na plataforma do twitter utilizando python e Selenium
+
+Equipe: 
+Eric Dias Perin
+Caroline Pereira
+Yara Nunes de Oliveira
