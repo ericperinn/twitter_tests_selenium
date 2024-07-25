@@ -26,12 +26,24 @@ class LoginTest(unittest.TestCase):
         email_input.send_keys(config.USER_EMAIL)
         email_input.send_keys(Keys.RETURN)
 
+        # Verifica a presença da tela de verificação adicional
+        try:
+            verification_input = WebDriverWait(self.driver, 5).until(
+                EC.visibility_of_element_located((By.NAME, "text"))
+            )
+            verification_input.send_keys(config.USERNAME)
+            verification_input.send_keys(Keys.RETURN)
+        except:
+            pass  # Se a tela não aparecer, continua normalmente
+
+        # Aguarda o campo de senha aparecer
         password_input = WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located((By.NAME, "password"))
         )
         password_input.send_keys(config.USER_PASSWORD)
         password_input.send_keys(Keys.RETURN)
 
+        # Aguarda até que a página inicial seja carregada
         WebDriverWait(self.driver, 10).until(
             EC.title_contains("Página Inicial")
         )
