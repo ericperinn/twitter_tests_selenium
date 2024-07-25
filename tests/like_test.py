@@ -13,7 +13,7 @@ import time
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import config
 
-class DeleteTweetTest(unittest.TestCase):
+class LikeTweetTest(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
@@ -56,7 +56,7 @@ class DeleteTweetTest(unittest.TestCase):
             self.driver.save_screenshot("login_error_page.png")
             raise e
 
-    def test_delete_tweet(self):
+    def test_like_tweet(self):
         try:
             # Aguardar e clicar no ícone do perfil
             print("Aguardando o ícone do perfil...")
