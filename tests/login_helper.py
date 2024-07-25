@@ -1,7 +1,13 @@
+# login_helper.py
+import sys
+import os
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+# Adiciona o diretório raiz ao caminho de pesquisa do Python
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import config
 
 def login(driver):
