@@ -32,7 +32,7 @@ Este projeto foi desenvolvido como parte da disciplina **Tópicos em Computaçã
 
 - Eric Dias Perin [GitHub](https://github.com/ericperinn)
 - Caroline Pereira [GitHub](https://github.com/caahp)
-- Yara Nunes de Oliveira [GitHub](https://github.com/yara)
+- Yara Nunes de Oliveira [GitHub](https://github.com/yara265)
 
 ---
 
